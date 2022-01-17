@@ -14,6 +14,9 @@
 		204608202791A2D4009864F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2046081E2791A2D4009864F0 /* Main.storyboard */; };
 		204608222791A2D8009864F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204608212791A2D8009864F0 /* Assets.xcassets */; };
 		204608252791A2D8009864F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204608232791A2D8009864F0 /* LaunchScreen.storyboard */; };
+		209D77AA2795D46100F0BED8 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209D77A92795D46100F0BED8 /* UserViewController.swift */; };
+		209D77AD2795D5A400F0BED8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209D77AC2795D5A400F0BED8 /* User.swift */; };
+		209D77AF2795D70900F0BED8 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209D77AE2795D70900F0BED8 /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		204608212791A2D8009864F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		204608242791A2D8009864F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		204608262791A2D8009864F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209D77A92795D46100F0BED8 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		209D77AC2795D5A400F0BED8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		209D77AE2795D70900F0BED8 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 		200FC8B427921CA100E11559 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2018D9F52792042200EE471E /* WelcomeViewController.swift */,
 				2018D9F727920C9F00EE471E /* LoginViewController.swift */,
+				2018D9F52792042200EE471E /* WelcomeViewController.swift */,
+				209D77A92795D46100F0BED8 /* UserViewController.swift */,
+				209D77AE2795D70900F0BED8 /* UserInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -77,13 +85,30 @@
 			isa = PBXGroup;
 			children = (
 				200FC8B427921CA100E11559 /* ViewControllers */,
-				2046081E2791A2D4009864F0 /* Main.storyboard */,
-				204608232791A2D8009864F0 /* LaunchScreen.storyboard */,
+				209D77A82795D41F00F0BED8 /* Storyboard */,
 				200FC8B327921C8D00E11559 /* App */,
+				209D77AB2795D58F00F0BED8 /* Models */,
 				204608212791A2D8009864F0 /* Assets.xcassets */,
 				204608262791A2D8009864F0 /* Info.plist */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		209D77A82795D41F00F0BED8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				204608232791A2D8009864F0 /* LaunchScreen.storyboard */,
+				2046081E2791A2D4009864F0 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		209D77AB2795D58F00F0BED8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				209D77AC2795D5A400F0BED8 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209D77AA2795D46100F0BED8 /* UserViewController.swift in Sources */,
+				209D77AF2795D70900F0BED8 /* UserInfoViewController.swift in Sources */,
 				2018D9F827920C9F00EE471E /* LoginViewController.swift in Sources */,
+				209D77AD2795D5A400F0BED8 /* User.swift in Sources */,
 				2018D9F62792042200EE471E /* WelcomeViewController.swift in Sources */,
 				204608192791A2D4009864F0 /* AppDelegate.swift in Sources */,
 				2046081B2791A2D4009864F0 /* SceneDelegate.swift in Sources */,
